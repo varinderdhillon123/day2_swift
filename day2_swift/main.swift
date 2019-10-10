@@ -121,3 +121,63 @@ for (k ) in dictCountry.values
     
 }
 
+func demo()
+{
+    print("hello")
+}
+
+func demo2(a : Int , b : Int) -> Int
+{
+    return a+b
+}
+
+func demo3(a a1: Int , b b1: Int) -> Int
+{
+    return a1 + b1
+}
+
+
+func sum(of a1: Int , and b1: Int) -> Int
+{
+    return a1 + b1
+}
+
+
+func demo4( _ a1:Int , _ b1: Int)->Int
+{
+    return a1 + b1
+
+}
+
+
+func swap(a: inout Int , b: inout Int)
+{
+    let temp = b
+    b = a
+    a = temp
+}
+
+
+func demo5(a: Int , b: Int) ->(Int,Int)
+{
+    return(b,a)
+}
+
+
+demo()
+print(demo2(a: 10, b: 20))
+
+
+print(demo3(a: 40, b: 50))
+print(sum(of: 40, and: 60))
+
+print(demo4(12, 20))
+
+var a1, b1 :Int
+a1 = 30
+b1 = 20
+swap(&a1 , &b1)
+print(a1,b1)
+
+
+print(demo5(a: 34, b: 70))
